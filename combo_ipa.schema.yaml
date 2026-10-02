@@ -1,0 +1,90 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: combo_ipa
+  name: Combo IPA
+  version: '0.1'
+  author:
+    - 陳林 <1chen0bryan@gmail.com>
+  description: |
+    並擊輸入國際音標
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ IPA, ABC ]
+    abbrev: [ I, Ａ ]
+  - name: full_shape
+    states: [ a, A ]
+    reset: 0
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - chord_composer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - table_translator
+  filters:
+    - uniquifier
+    - lua_filter@*cand_info
+
+chord_composer:
+  alphabet: 'qazwsxedcrfvtgb yhnujmik,ol.p;/'
+  algebra:
+    - 'xlit|qazwsxedcrfvtgb yhnujmik,ol.p;/|agmbhnciodjpekqVEKQDJPCIOBHNAGM|'
+    - 'xform/^V$/ /'
+  bindings:
+    Return: commit_raw_input
+  output_format:
+    - 'xform/^([a-zA-Z*]+)$/$1 /'
+
+streaming_chord:
+  chord_duration_ms: 60
+  chord_timeout_ms: 120
+
+ascii_composer:
+  inline_uppercase: true
+  inline_keypad: true
+
+editor:
+  bindings:
+    BackSpace: back_syllable
+
+speller:
+  alphabet: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  auto_select: false
+  auto_select_unique_candidate: false
+
+translator:
+  dictionary: combo_ipa
+  enable_completion: false
+  enable_encode: false
+  encode_sentence: false
+
+punctuator:
+
+recognizer:
+
+key_binder:
+  import_preset: default
+  bindings:
+    - { when: paging, accept: comma, send: comma }
+    - { when: has_menu, accept: period, send: period }
+
+__patch:
+  - combo_ipa.custom:/patch?
