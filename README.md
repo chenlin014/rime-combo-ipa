@@ -6,8 +6,16 @@
 
 ![Vowel Combo](image/vowel_combo.png)
 
-# 輔音 / Consonant
+## 輔音 / Consonant
 
 ![Consonant](image/consonant.png)
 
 ![Manner of Articulation](image/manner.png)
+
+## 待辦 / Todo
+
+- [ ] Clicks
+- [ ] Brackets
+- [ ] Suprasegmentals
+- [ ] Tone
+- [ ] Diacritics
