@@ -14,7 +14,7 @@
 
 ## 待辦 / Todo
 
-- [ ] Clicks
+- [x] Clicks
 - [ ] Brackets
 - [ ] Suprasegmentals
 - [ ] Tone
