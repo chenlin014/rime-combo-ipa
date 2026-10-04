@@ -1,4 +1,4 @@
-# 人標竝擊 / Combo IPA
+# 人音竝擊 / Combo IPA
 
 ## 元音 / Vowel
 
@@ -13,6 +13,13 @@
 ![Manner of Articulation](image/manner.png)
 
 ## 附加符號 / Diacritics
+
+按式：
+```
+○○○○○ ○○○○○
+○○○○○ ○●●●○
+○○○○○ ○○○○○
+```
 
 ![Diacritics](image/diacritics.png)
 
