@@ -3,7 +3,7 @@
 
 ---
 name: combo_ipa
-version: "0.3"
+version: "0.4"
 use_preset_vocabulary: false
 ...
 
@@ -40,8 +40,10 @@ a	g
 ä	m
 ɑ	a
 ɒ	G
+ɚ	hk
+ɝ	nj
 i̯	jV
-y̯	VD
+y̑	VD
 ɨ̯	pV
 ʉ̯	VP
 ɯ̯	dV
@@ -73,6 +75,23 @@ a̯	gV
 ä̯	mV
 ɑ̯	aV
 ɒ̯	VG
+̈	e
+̤	eV
+̃	E
+̰	VE
+˞	q
+ᵊ	qV
+̯	Q
+̑	VQ
+̥	hj
+̊	hjV
+̬	JH
+̜	gj
+͑	gjV
+̹	JG
+͗	VJG
+̽	np
+͓	npV
 m̥	gVH
 m	gH
 ɱ̊	mVH
@@ -370,6 +389,7 @@ sʼ	iO
 ɕʼ	nO
 xʼ	jO
 χʼ	dO
+ʼ	kO
 t̪θʼ	oPO
 tsʼ	iPO
 t̠ʃʼ	hPO
@@ -406,3 +426,26 @@ q͡p	gdJ
 ɠ̊͜ɓ̥	gjVP
 ɠ͡ɓ	gjP
 t͡pʼ	giJH
+ʷ	gJIH
+̼	aJIH
+᫥	aVJIH
+̠	hJIH
+᫢	hVJIH
+ʲ	bJIH
+̚	nJIH
+ᶿ	nVJIH
+̻	iJIH
+᫤	iVJIH
+̺	cJIH
+᫣	cVJIH
+̪	oJIH
+͆	oVJIH
+ˠ	jJIH
+ˣ	jVJIH
+̴	dJIH
+ˤ	pJIH
+𐞴	pVJIH
+ʰ	kJIH
+ʱ	kVJIH
+ʷʰ	gkJIH
+ʷʱ	gkVJIH
