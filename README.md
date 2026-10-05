@@ -42,6 +42,6 @@
 
 - [x] Clicks
 - [ ] Brackets
-- [ ] Suprasegmentals
-- [ ] Tone
+- [x] Suprasegmentals
+- [x] Tone
 - [x] Diacritics

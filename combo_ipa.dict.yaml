@@ -3,7 +3,7 @@
 
 ---
 name: combo_ipa
-version: "0.5"
+version: "0.6"
 use_preset_vocabulary: false
 ...
 
@@ -41,7 +41,9 @@ a	g
 ɑ	a
 ɒ	G
 ɚ	hk
+˞	hkV
 ɝ	nj
+ᵊ	ik
 i̯	jV
 y̑	VD
 ɨ̯	pV
@@ -79,19 +81,26 @@ a̯	gV
 ̤	eV
 ̃	E
 ̰	VE
-˞	q
-ᵊ	qV
+̥	q
+̊	qV
 ̯	Q
 ̑	VQ
-̥	hj
-̊	hjV
-̬	JH
+̆	hj
+̮	hjV
+.	JH
+‿	VJH
+ː	hij
+ˑ	hijV
+ˈ	JIH
+ˌ	VJIH
 ̜	gj
 ͑	gjV
 ̹	JG
 ͗	VJG
 ̽	np
 ͓	npV
+|	bd
+‖	bdV
 m̥	gVH
 m	gH
 ɱ̊	mVH
@@ -429,6 +438,7 @@ t͡pʼ	giJH
 ʷ	gJIH
 ̼	aJIH
 ᫥	aVJIH
+̬	mJIH
 ̠	hJIH
 ᫢	hVJIH
 ʲ	bJIH
