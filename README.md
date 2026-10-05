@@ -25,6 +25,19 @@
 
 ![Diacritic Combo](image/diacritic_combo.png)
 
+## 聲調 / Tone
+
+按式：
+```
+○○○○○ ○○○○○
+○○○○○ ○●○○●
+○○○○○ ○○○○○
+```
+
+![Tone](image/tone.png)
+
+![Tone Combo](image/tone_combo.png)
+
 ## 待辦 / Todo
 
 - [x] Clicks
