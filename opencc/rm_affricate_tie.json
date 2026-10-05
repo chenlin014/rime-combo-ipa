@@ -1,0 +1,16 @@
+{
+	"name": "Remove Affricate Tie",
+	"segmentation": {
+		"type": "mmseg",
+		"dict": {
+			"type": "text",
+			"file": "rm_affricate_tie.txt"
+		}
+	},
+	"conversion_chain": [{
+		"dict": {
+			"type": "text",
+			"file": "rm_affricate_tie.txt"
+		}
+	}]
+}

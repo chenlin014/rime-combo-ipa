@@ -4,7 +4,7 @@
 schema:
   schema_id: combo_ipa
   name: Combo IPA
-  version: '0.2'
+  version: '0.3'
   author:
     - 陳林 <1chen0bryan@gmail.com>
   description: |
@@ -17,6 +17,12 @@ switches:
     abbrev: [ I, Ａ ]
   - name: full_shape
     states: [ a, A ]
+    reset: 0
+  - name: rm_postal_mark
+    states: [ t̠ʃ, tʃ ]
+    reset: 0
+  - name: rm_affricate_tie
+    states: [ t͡s, ts ]
     reset: 0
 
 engine:
@@ -41,7 +47,8 @@ engine:
     - table_translator
   filters:
     - uniquifier
-    - lua_filter@*cand_info
+    - simplifier@rm_postal_mark
+    - simplifier@rm_affricate_tie
 
 chord_composer:
   alphabet: 'qazwsxedcrfvtgb yhnujmik,ol.p;/'
@@ -76,6 +83,18 @@ translator:
   enable_encode: false
   encode_sentence: false
   enable_user_dict: false
+
+rm_postal_mark:
+  opencc_config: rm_postal_mark.json
+  option_name: rm_postal_mark
+  tips: none
+  inherit_comment: false
+
+rm_affricate_tie:
+  opencc_config: rm_affricate_tie.json
+  option_name: rm_affricate_tie
+  tips: none
+  inherit_comment: false
 
 punctuator:
 
