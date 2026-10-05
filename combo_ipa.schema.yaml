@@ -4,7 +4,7 @@
 schema:
   schema_id: combo_ipa
   name: Combo IPA
-  version: '0.1'
+  version: '0.2'
   author:
     - 陳林 <1chen0bryan@gmail.com>
   description: |
@@ -75,6 +75,7 @@ translator:
   enable_completion: false
   enable_encode: false
   encode_sentence: false
+  enable_user_dict: false
 
 punctuator:
 
