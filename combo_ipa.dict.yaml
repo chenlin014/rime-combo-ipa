@@ -3,7 +3,7 @@
 
 ---
 name: combo_ipa
-version: "0.7"
+version: "0.8"
 use_preset_vocabulary: false
 ...
 
@@ -44,6 +44,10 @@ a	g
 ˞	hkV
 ɝ	nj
 ᵊ	ik
+ɿ	hp
+ʮ	PH
+ʅ	DH
+ʯ	hd
 i̯	jV
 y̑	dV
 ɨ̯	pV
