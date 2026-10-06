@@ -1,0 +1,16 @@
+{
+	"name": "IPA to HPA",
+	"segmentation": {
+		"type": "mmseg",
+		"dict": {
+			"type": "text",
+			"file": "ipa2hpa.txt"
+		}
+	},
+	"conversion_chain": [{
+		"dict": {
+			"type": "text",
+			"file": "ipa2hpa.txt"
+		}
+	}]
+}
